@@ -3,7 +3,7 @@ import { screen, render } from '@testing-library/react';
 import About from '../pages/About';
 
 describe('Testando o componente <About />', () => {
-  test('Testando se os links Home, About e Favorite estão no App', () => {
+  test('Teste se a página contém as informações sobre a Pokédex', () => {
     render(<About />);
     const pokedex = screen.getByText('This application simulates a Pokédex',
       { exact: false });
